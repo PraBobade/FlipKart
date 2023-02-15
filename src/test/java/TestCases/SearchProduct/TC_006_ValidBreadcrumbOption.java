@@ -10,7 +10,7 @@ public class TC_006_ValidBreadcrumbOption extends _00_BaseClass {
 
     @Test
     public void SearchProduct(){
-        _001_HomePage Home =new _001_HomePage(driver);
+        _001_HomePage Home =new _001_HomePage();
         _006_BreadcrumbOption search =new _006_BreadcrumbOption(driver);
         Home.HomePage();
         search.SearchForProduct();
