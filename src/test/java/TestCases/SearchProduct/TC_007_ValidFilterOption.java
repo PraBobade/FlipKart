@@ -10,7 +10,7 @@ public class TC_007_ValidFilterOption extends _00_BaseClass {
     @Test
     public void Filter() throws InterruptedException {
         _001_HomePage Home =new _001_HomePage();
-        _007_ValidFilterOption search = new _007_ValidFilterOption(driver);
+        _007_ValidFilterOption search = new _007_ValidFilterOption();
         Home.HomePage();
         search.SearchForProduct();
         search.ApplyFilterForProduct_Price();

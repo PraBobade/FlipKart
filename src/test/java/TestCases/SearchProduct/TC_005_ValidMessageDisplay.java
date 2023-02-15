@@ -11,7 +11,7 @@ public class TC_005_ValidMessageDisplay extends _00_BaseClass {
     @Test
     public void ValidMessageDisplay(){
         _001_HomePage Home =new _001_HomePage();
-        _005_MessageDisplay search =new _005_MessageDisplay(driver);
+        _005_MessageDisplay search =new _005_MessageDisplay();
         Home.HomePage();
         Log.info("Home Page open successfully");
         search.SearchNonExistingProduct();

@@ -1,2 +1,12 @@
 2023-02-15 17:08:40,278 [main] INFO FlipKart.com - Home Page open successfully
 2023-02-15 17:08:40,615 [main] INFO FlipKart.com - Searched Product Successfully
+2023-02-15 17:12:58,302 [main] INFO FlipKart.com - Home Page open successfully
+2023-02-15 17:12:58,569 [main] INFO FlipKart.com - Searched Product Successfully
+2023-02-15 17:13:09,695 [main] INFO FlipKart.com - Home Page open successfully
+2023-02-15 17:13:10,157 [main] INFO FlipKart.com - Searching for Non Existing Product
+2023-02-15 17:13:37,526 [main] INFO FlipKart.com - Home Page open successfully
+2023-02-15 17:13:37,909 [main] INFO FlipKart.com - Displaying multiple product on screen
+2023-02-15 17:13:53,170 [main] INFO FlipKart.com - Home Page open successfully
+2023-02-15 17:13:53,670 [main] INFO FlipKart.com - Checking for the Message is displaying correctly or not
+2023-02-15 17:14:06,951 [main] INFO FlipKart.com - Searching for product
+2023-02-15 17:14:06,952 [main] INFO FlipKart.com - Checking for Breadcrumb Option

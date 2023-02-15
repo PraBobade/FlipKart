@@ -10,7 +10,7 @@ public class TC_003_SearchWithoutProvidingAnyProductName extends _00_BaseClass {
     @Test
     public void SearchProduct(){
         _001_HomePage Home =new _001_HomePage();
-        _003_SearchWithoutProvidingAnyProduct search =new _003_SearchWithoutProvidingAnyProduct(driver);
+        _003_SearchWithoutProvidingAnyProduct search =new _003_SearchWithoutProvidingAnyProduct();
         Home.HomePage();
         search.SearchWithoutProvidingAnyProductName();
     }

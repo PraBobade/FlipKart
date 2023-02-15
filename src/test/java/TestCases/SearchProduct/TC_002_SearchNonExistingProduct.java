@@ -9,7 +9,7 @@ public class TC_002_SearchNonExistingProduct extends _00_BaseClass {
     @Test
     public void SearchProduct(){
         _001_HomePage Home =new _001_HomePage();
-        _002_SearchNonExistingProduct search =new _002_SearchNonExistingProduct(driver);
+        _002_SearchNonExistingProduct search =new _002_SearchNonExistingProduct();
         Home.HomePage();
         Log.info("Home Page open successfully");
         search.SearchNonExistingProduct();

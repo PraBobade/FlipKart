@@ -7,10 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class _007_ValidFilterOption extends _00_BaseClass {
-    WebDriver driver;
-    public _007_ValidFilterOption(WebDriver dr){
-        driver = dr;
-    }
+
     public void SearchForProduct(){
         driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("iMac");
         driver.findElement(By.xpath("//button[@class='L0Z3Pu']")).click();

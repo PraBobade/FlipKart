@@ -10,7 +10,7 @@ public class TC_004_MultipleProductDisplay extends _00_BaseClass {
     @Test
     public void SearchProduct(){
         _001_HomePage Home =new _001_HomePage();
-        _004_MultipleProductDisplay search =new _004_MultipleProductDisplay(driver);
+        _004_MultipleProductDisplay search =new _004_MultipleProductDisplay();
         Home.HomePage();
         Log.info("Home Page open successfully");
         search.MultipleProductDisplay();
