@@ -1,8 +1,9 @@
 package TestCases.SearchProduct;
 
 import PageObject.LogIn._001_HomePage;
-import PageObject.SearchProduct._002_SearchNonExistingProduct;
+
 import PageObject.SearchProduct._003_SearchWithoutProvidingAnyProduct;
+
 import TestCases._00_BaseClass;
 import org.testng.annotations.Test;
 

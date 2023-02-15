@@ -1,7 +1,6 @@
 package TestCases.SearchProduct;
 
 import PageObject.LogIn._001_HomePage;
-import PageObject.SearchProduct._006_BreadcrumbOption;
 import PageObject.SearchProduct._007_ValidFilterOption;
 import TestCases._00_BaseClass;
 import org.testng.annotations.Test;

@@ -13,9 +13,9 @@ public class TC_005_ValidMessageDisplay extends _00_BaseClass {
         _001_HomePage Home =new _001_HomePage();
         _005_MessageDisplay search =new _005_MessageDisplay();
         Home.HomePage();
-        Log.info("Home Page open successfully");
+
         search.SearchNonExistingProduct();
-        Log.info("Checking for the Message is displaying correctly or not");
+
         search.ValidateTextPresentProperlyOrNot();
     }
 }

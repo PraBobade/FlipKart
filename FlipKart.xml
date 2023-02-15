@@ -18,6 +18,7 @@
             <class name="TestCases.SearchProduct.TC_005_ValidMessageDisplay"/>
             <class name="TestCases.SearchProduct.TC_006_ValidBreadcrumbOption"/>
             <class name="TestCases.SearchProduct.TC_007_ValidFilterOption"/>
+            <class name="TestCases.SearchProduct.TC_008_NoOfProductOnScreen" />
         </classes>
     </test>
 
