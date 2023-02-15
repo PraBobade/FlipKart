@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Utilities.Listener"/>
+    </listeners>
+    <test name="Login Page"   >
+        <classes>
+            <class name="TestCases.LogIn.TC_001_LoginPage"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/LENOVO/IdeaProjects/SDET">
+        <classes>
+            <class name="TestCases.SearchProduct.TC_001_SearchForProduct"/>
+            <class name="TestCases.SearchProduct.TC_002_SearchNonExistingProduct"/>
+            <class name="TestCases.SearchProduct.TC_003_SearchWithoutProvidingAnyProductName"/>
+            <class name="TestCases.SearchProduct.TC_004_MultipleProductDisplay"/>
+            <class name="TestCases.SearchProduct.TC_005_ValidMessageDisplay"/>
+            <class name="TestCases.SearchProduct.TC_006_ValidBreadcrumbOption"/>
+            <class name="TestCases.SearchProduct.TC_007_ValidFilterOption"/>
+        </classes>
+    </test>
+
+</suite>
