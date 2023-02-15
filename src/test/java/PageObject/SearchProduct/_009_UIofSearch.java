@@ -5,28 +5,13 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
+public class _009_UIofSearch extends _00_BaseClass {
 
-public class _008_NoOfProductOnScreen extends _00_BaseClass {
-    public void SearchForProduct(){
-        driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("iMac");
-        driver.findElement(By.xpath("//button[@class='L0Z3Pu']")).click();
-    }
-    public void CheckForNumberOfProduct(){
-        List<WebElement> items = driver.findElements(By.xpath("//div[@class='_4ddWXP']"));
-        if (items.size()==12){
-            Assert.assertTrue(false);
-            Log.info("12 Items Present on Screen");
-        }
-        else{
-            Assert.fail();
-            Log.error("12 Items are not Present on Screen");
-        }
-    }
     public void CheckTitleInSearchField(){
         Log.info("Checking the Title in Search Field");
-        String FieldText = driver.findElement(By.xpath("//input[@title='Search for products, brands and more']")).getText();
-        if (FieldText.equalsIgnoreCase("Search for product, brands and more")){
+        String FieldText = driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).getAttribute("placeholder");
+        System.out.println(FieldText);
+        if (FieldText.equalsIgnoreCase("Search for products, brands and more")){
             Assert.assertTrue(true);
             Log.info("The Title of Search Icon is Correct.");
         }
@@ -49,7 +34,7 @@ public class _008_NoOfProductOnScreen extends _00_BaseClass {
     }
     public void CheckIcon(){
         Log.info("Checking for Search icon is present or not");
-        WebElement Search = driver.findElement(By.xpath(""));
+        WebElement Search = driver.findElement(By.cssSelector("button[type='submit']"));
         if (Search.isDisplayed()){
             Assert.assertTrue(true);
         }
