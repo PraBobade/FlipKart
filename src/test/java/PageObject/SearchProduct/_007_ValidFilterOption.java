@@ -2,12 +2,13 @@ package PageObject.SearchProduct;
 
 import TestCases._00_BaseClass;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class _007_ValidFilterOption extends _00_BaseClass {
-
+    JavascriptExecutor js = (JavascriptExecutor)driver;
     public void SearchForProduct(){
         Log.info("Validating Filter Option");
         driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("iMac");
@@ -23,7 +24,9 @@ public class _007_ValidFilterOption extends _00_BaseClass {
         Thread.sleep(2000);
         Log.info("Apply the Price filter successfully");
     }
-    public void ApplyFilterForProduct_CustomerRating(){
+    public void ApplyFilterForProduct_CustomerRating() throws InterruptedException {
+        js.executeScript("window.scrollBy(0,5000)" );
+        Thread.sleep(2000);
         Log.info("Apply Filter For Product Customer's Rating 4+");
         WebElement CR = driver.findElement(By.xpath("//section[@class='_167Mu3 _2hbLCH'][2]"));
         wait.until(ExpectedConditions.elementToBeClickable(CR.findElement(By.xpath("//label[@class='_2iDkf8 t0pPfW']"))));

@@ -15,7 +15,7 @@ public class _008_NoOfProductOnScreen extends _00_BaseClass {
     public void CheckForNumberOfProduct(){
         List<WebElement> items = driver.findElements(By.xpath("//div[@class='_4ddWXP']"));
         if (items.size()==12){
-            Assert.assertTrue(false);
+            Assert.assertTrue(true);
             Log.info("12 Items Present on Screen");
         }
         else{

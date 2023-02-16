@@ -58,7 +58,7 @@ public class _00_BaseClass {
         File sc = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(sc, new File(path));
     }
-  @AfterClass
+     @AfterClass
     public void CloseBrowser(){
         driver.quit();
     }
