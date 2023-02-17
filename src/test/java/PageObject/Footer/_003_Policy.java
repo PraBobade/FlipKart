@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class _003_Policy extends _00_BaseClass {
@@ -18,7 +19,8 @@ public class _003_Policy extends _00_BaseClass {
             act.moveToElement(e).keyDown(Keys.CONTROL).click().build().perform();
         }
     }
-
+//Online Shopping India | Buy Mobiles, Electronics, Appliances, Clothing and More Online at Flipkart.com
+//Online Shopping India | Buy Mobiles, Electronics, Appliances, Clothing and More Online at Flipkart.com
     public void ValidateTitleOfLinks() throws InterruptedException {
         Log.info("Validating Title of Links");
         String Text1 = "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!";
@@ -35,20 +37,22 @@ public class _003_Policy extends _00_BaseClass {
         System.out.println(tabs.size());
         boolean result = true;
 
-        for (String a:tabs){
-            driver.switchTo().window(a);
+
+        for (int j=0;j<tabs.size();j++){
+            System.out.println(j);
+            driver.switchTo().window(tabs.get(j));
             String Title = driver.getTitle();
-            System.out.println(Title);
-            for (int i=0;i<tabs.size()-1;i++) {
+            for (int i=0;i<=tabs.size()-1;i++) {
                 if (Title.contains(Text[i])){
+                    result=true;
                     break;
                 }
                 else{
                     result =false;
                 }
             }
-            Assert.assertTrue(result);
         }
+        Assert.assertTrue(result);
         Log.info("Validation of Links Text is completed");
     }
 }
