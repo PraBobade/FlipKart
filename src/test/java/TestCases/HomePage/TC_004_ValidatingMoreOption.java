@@ -12,6 +12,7 @@ public class TC_004_ValidatingMoreOption extends _00_BaseClass {
         Home Home = new Home();
         Home.HomePage();
         _004_MoreOption HP = new _004_MoreOption();
+
         HP.ValidatingMoreOption();
         HP.ValidatingNotification();
         HP.Validate_Advertise();
