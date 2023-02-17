@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -26,6 +27,7 @@ public class _00_BaseClass {
     public static WebDriver driver;
     public static Logger Log;
     public static WebDriverWait wait;
+    public static Actions act;
 
     @BeforeClass
     public void setup(){
@@ -52,13 +54,14 @@ public class _00_BaseClass {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get(read.getUrl());
+        act = new Actions(driver);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     public static void ScreenShot(WebDriver driver, String path) throws IOException {
         File sc = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(sc, new File(path));
     }
-     @AfterClass
+    // @AfterClass
     public void CloseBrowser(){
         driver.quit();
     }

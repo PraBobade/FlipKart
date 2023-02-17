@@ -10,7 +10,7 @@ public class _012_SearchUsingKeyBoard extends _00_BaseClass {
 
 
     public void SearchProductUsingKeyBoard(){
-        Actions act = new Actions(driver);
+
         Log.info("Searching Product only Using KeyBoard only");
         act.sendKeys(Keys.TAB).build().perform();
         act.sendKeys(Keys.TAB).build().perform();
