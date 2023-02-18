@@ -17,15 +17,19 @@
             <class name="TestCases.SearchProduct.TC_004_MultipleProductDisplay"/>
             <class name="TestCases.SearchProduct.TC_005_ValidMessageDisplay"/>
             <class name="TestCases.SearchProduct.TC_006_ValidBreadcrumbOption"/>
-            <class name="TestCases.SearchProduct.TC_007_ValidFilterOption"/>
+            <class name="TestCases.SearchProduct.TC_007_TotalNumberOfProductVisible"/>
             <class name="TestCases.SearchProduct.TC_008_NoOfProductOnScreen" />
             <class name="TestCases.SearchProduct.TC_009_UIofSearch" />
             <class name="TestCases.SearchProduct.TC_010_ClickOnProduct" />
             <class name="TestCases.SearchProduct.TC_011_PageHeading" />
             <class name="TestCases.SearchProduct.TC_012_SearchUsingKeyBoard" />
+            <class name="TestCases.SearchProduct.TC_013_ValidFilterOptionForPrice" />
+            <class name="TestCases.SearchProduct.TC_014_ValidFilterOptionForOffer" />
+            <class name="TestCases.SearchProduct.TC_015_ValidFilterOptionForCustomersRating" />
+
         </classes>
     </test>
-    <test name="Footer of Home Page"   >
+    <test name="Footer of Home Page">
         <classes>
             <class name="TestCases.Footer.TC_001_About"/>
             <class name="TestCases.Footer.TC_002_Help"/>
@@ -62,6 +66,9 @@
             <class name="TestCases.Compare.TC_001_ValidateCompareOption"/>
             <class name="TestCases.Compare.TC_002_CompareTwoProduct"/>
             <class name="TestCases.Compare.TC_003_ValidateMaximumCompare"/>
+            <class name="TestCases.Compare.TC_004_ViewCompareProducts"/>
+            <class name="TestCases.Compare.TC_005_ShowDifferenceOnly"/>
+            <class name="TestCases.Compare.TC_006_RemoveItemFromCompare"/>
         </classes>
     </test>
 

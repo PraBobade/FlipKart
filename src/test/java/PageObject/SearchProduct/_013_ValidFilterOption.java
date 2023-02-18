@@ -1,12 +1,13 @@
 package PageObject.SearchProduct;
 
 import TestCases._00_BaseClass;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class _007_ValidFilterOption extends _00_BaseClass {
+public class _013_ValidFilterOption extends _00_BaseClass {
     JavascriptExecutor js = (JavascriptExecutor)driver;
     public void SearchForProduct(){
         Log.info("Validating Filter Option");
@@ -18,30 +19,25 @@ public class _007_ValidFilterOption extends _00_BaseClass {
         Log.info("Apply Filter For Product Price between 5000 to 60000+");
         driver.findElement(By.xpath("(//select[@class='_2YxCDZ'])[1]")).click();
         driver.findElement(By.xpath("//option[@value='5000']")).click();
-        Thread.sleep(2000);
         driver.findElement(By.xpath("(//select[@class='_2YxCDZ'])[2]")).click();
         driver.findElement(By.xpath("//option[@value='Max']")).click();
-        Thread.sleep(2000);
         Log.info("Apply the Price filter successfully");
-        Log.info("---------------------------------------------------------");
+
     }
-    public void ApplyFilterForProduct_CustomerRating() throws InterruptedException {
-        js.executeScript("window.scrollBy(0,5000)" );
-        Thread.sleep(2000);
+    public void ApplyFilterForProduct_CustomerRating() {
         Log.info("Apply Filter For Product Customer's Rating 4+");
         WebElement CR = driver.findElement(By.xpath("//section[@class='_167Mu3 _2hbLCH'][2]"));
         wait.until(ExpectedConditions.elementToBeClickable(CR.findElement(By.xpath("//label[@class='_2iDkf8 t0pPfW']"))));
-        System.out.println(driver.findElement(By.xpath("//section[@class='_167Mu3 _2hbLCH'][2]")).isDisplayed());
         CR.findElement(By.xpath("(//div[@class='_24_Dny'])[2]")).click();
+        Assert.assertTrue(driver.findElement(By.xpath("//section[@class='_167Mu3 _2hbLCH'][2]")).isEnabled());
         Log.info("Apply Filter For Product Customer's Rating 4+ successfully");
-        Log.info("---------------------------------------------------------");
     }
 
     public void ApplyFilterForProduct_Offer(){
         Log.info("Apply Filter For Product Offer No Cost EMI");
         driver.findElement(By.xpath("(//div[@class=\"_24_Dny\"])[4]")).click();
+        Assert.assertTrue( driver.findElement(By.xpath("(//div[@class=\"_24_Dny\"])[4]")).isEnabled());
         Log.info("Applied Successfully EMI");
-        Log.info("---------------------------------------------------------");
     }
 
 

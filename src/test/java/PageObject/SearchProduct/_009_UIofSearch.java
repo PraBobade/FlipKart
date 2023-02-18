@@ -19,7 +19,6 @@ public class _009_UIofSearch extends _00_BaseClass {
             Assert.fail();
             Log.error("The Search field Text is NOT proper");
         }
-        Log.info("---------------------------------------------------------");
     }
     public void CheckForWidthAndHeight(){
         Log.info("Checking for Height of Search field");
@@ -32,7 +31,7 @@ public class _009_UIofSearch extends _00_BaseClass {
             Assert.fail();
             Log.error("The Height is not Correct");
         }
-        Log.info("---------------------------------------------------------");
+
     }
     public void CheckIcon(){
         Log.info("Checking for Search icon is present or not");
@@ -44,6 +43,5 @@ public class _009_UIofSearch extends _00_BaseClass {
             Assert.fail();
             Log.error("The Search Icon is not Present");
         }
-        Log.info("---------------------------------------------------------");
     }
 }

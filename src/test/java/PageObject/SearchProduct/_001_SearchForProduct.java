@@ -9,6 +9,6 @@ public class _001_SearchForProduct extends _00_BaseClass {
         Log.info("Searching for Product");
         driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("iMac");
         driver.findElement(By.xpath("//button[@class='L0Z3Pu']")).click();
-        Log.info("---------------------------------------------------------");
+
     }
 }
