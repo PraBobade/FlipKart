@@ -32,5 +32,6 @@ public class _006_Address extends _00_BaseClass {
         }
         Assert.assertTrue(result);
         Log.info("Validating Office Address in Footer is completed");
+        Log.info("---------------------------------------------------------");
     }
 }

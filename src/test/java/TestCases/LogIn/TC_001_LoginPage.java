@@ -8,7 +8,7 @@ public class TC_001_LoginPage extends _00_BaseClass {
 
     @Test
     public void LoginToPage(){
-        _001_LoginPage Login = new _001_LoginPage(driver);
-        Login.NavigateToLoginPage();
+        _001_LoginPage LP = new _001_LoginPage();
+        LP.NavigateToLoginPage();
     }
 }

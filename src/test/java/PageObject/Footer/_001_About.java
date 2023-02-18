@@ -41,12 +41,11 @@ public class _001_About extends _00_BaseClass {
                     break;
                 }
                 else{
-                    Log.error("No Link title is present");
                     result =false;
                 }
             }
             Assert.assertTrue(result);
         }
-        Log.info("Validation of Links Text is completed");
+        Log.info("Validation of Links Text is completed");Log.info("---------------------------------------------------------");
     }
 }

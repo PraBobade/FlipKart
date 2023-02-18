@@ -5,14 +5,12 @@ import PageObject.LogIn.Home;
 import TestCases._00_BaseClass;
 import org.testng.annotations.Test;
 
-public class TC_001_HomePage extends _00_BaseClass {
+public class TC_001_HomePage extends _001_HomePageValidation {
 
     @Test
     public void HomePageValidation(){
-        Home Home = new Home();
-        _001_HomePageValidation HP = new _001_HomePageValidation();
-        Home.HomePage();
-        HP.ValidateURL();
-        HP.ValidateTitle();
+        HomePage();
+        ValidateURL();
+        ValidateTitle();
     }
 }

@@ -9,7 +9,7 @@
             <class name="TestCases.LogIn.TC_001_LoginPage"/>
         </classes>
     </test>
-    <test verbose="2" preserve-order="true" name="C:/Users/LENOVO/IdeaProjects/SDET">
+    <test verbose="2" name="Search Product">
         <classes>
             <class name="TestCases.SearchProduct.TC_001_SearchForProduct"/>
             <class name="TestCases.SearchProduct.TC_002_SearchNonExistingProduct"/>
@@ -23,6 +23,37 @@
             <class name="TestCases.SearchProduct.TC_010_ClickOnProduct" />
             <class name="TestCases.SearchProduct.TC_011_PageHeading" />
             <class name="TestCases.SearchProduct.TC_012_SearchUsingKeyBoard" />
+        </classes>
+    </test>
+    <test name="Footer of Home Page"   >
+        <classes>
+            <class name="TestCases.Footer.TC_001_About"/>
+            <class name="TestCases.Footer.TC_002_Help"/>
+            <class name="TestCases.Footer.TC_003_Policy"/>
+            <class name="TestCases.Footer.TC_004_Social"/>
+            <class name="TestCases.Footer.TC_005_MailUs"/>
+            <class name="TestCases.Footer.TC_006_Address"/>
+        </classes>
+    </test>
+    <test name="Validate Home Page of flipKart"   >
+        <classes>
+            <class name="TestCases.HomePage.TC_001_HomePage"/>
+            <class name="TestCases.HomePage.TC_002_MenuBelowSearchOption"/>
+            <class name="TestCases.HomePage.TC_003_BecomeASeller"/>
+            <class name="TestCases.HomePage.TC_004_ValidatingMoreOption"/>
+            <class name="TestCases.HomePage.TC_005_Cart"/>
+            <class name="TestCases.HomePage.TC_006_ExplorePlus"/>
+            <class name="TestCases.HomePage.TC_007_Fashion"/>
+            <class name="TestCases.HomePage.TC_008_Electronics"/>
+            <class name="TestCases.HomePage.TC_009_Home"/>
+            <class name="TestCases.HomePage.TC_010_BeautyToysMore"/>
+        </classes>
+    </test>
+    <test name="Travel"   >
+        <classes>
+            <class name="TestCases.FlipKart_Travel.TC_001_Travel"/>
+            <class name="TestCases.FlipKart_Travel.TC_002_ValidateBankOffersInTravel"/>
+            <class name="TestCases.FlipKart_Travel.TC_003_ValidateBestOffersInTravel"/>
         </classes>
     </test>
 

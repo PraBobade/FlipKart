@@ -11,10 +11,11 @@ public class _006_BreadcrumbOption extends _00_BaseClass {
         Log.info("Checking for Breadcrumb Option");
         driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("iMac");
         driver.findElement(By.xpath("//button[@class='L0Z3Pu']")).click();
+        Log.info("---------------------------------------------------------");
     }
     public void ValidateBreadcrumbOption(){
+        Log.info("Validating Breadcrumb Option");
         String text = driver.findElement(By.xpath("//div[@class='_1MR4o5']")).getText();
-
         if (text.equalsIgnoreCase("HomeComputersDesktop PCs")){
             Assert.assertTrue(true);
             Log.info("The Breadcrumb is Correct");
@@ -22,6 +23,6 @@ public class _006_BreadcrumbOption extends _00_BaseClass {
         else{
             Assert.fail();
             Log.error("The Breadcrumb is wrong");
-        }
+        } Log.info("---------------------------------------------------------");
     }
 }

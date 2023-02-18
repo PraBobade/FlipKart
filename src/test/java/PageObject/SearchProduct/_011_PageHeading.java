@@ -9,6 +9,7 @@ public class _011_PageHeading extends _00_BaseClass {
         Log.info("Searching for Product");
         driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("iMac");
         driver.findElement(By.xpath("//button[@class='L0Z3Pu']")).click();
+        Log.info("---------------------------------------------------------");
     }
     public void ValidateURL(){
         String PageHeadLine = "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!";
@@ -26,5 +27,6 @@ public class _011_PageHeading extends _00_BaseClass {
             Log.error("The Url and Headline is incorrect");
             Assert.fail();
         }
+        Log.info("---------------------------------------------------------");
     }
 }

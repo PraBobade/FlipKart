@@ -6,14 +6,12 @@ import PageObject.LogIn.Home;
 import TestCases._00_BaseClass;
 import org.testng.annotations.Test;
 
-public class TC_004_Social extends _00_BaseClass {
+public class TC_004_Social extends _004_Social {
 
     @Test
     public void About() throws InterruptedException {
-        Home Home = new Home();
-        _004_Social HP = new _004_Social();
-        Home.HomePage();
-        HP.Social();
-        HP.ValidateTitleOfLinks();
+        HomePage();
+        Social();
+        ValidateTitleOfLinks();
     }
 }

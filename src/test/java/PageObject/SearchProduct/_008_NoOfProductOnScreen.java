@@ -9,10 +9,13 @@ import java.util.List;
 
 public class _008_NoOfProductOnScreen extends _00_BaseClass {
     public void SearchForProduct(){
+        Log.info("Searching for product");
         driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("iMac");
         driver.findElement(By.xpath("//button[@class='L0Z3Pu']")).click();
+        Log.info("---------------------------------------------------------");
     }
     public void CheckForNumberOfProduct(){
+        Log.info("Check for Number of product");
         List<WebElement> items = driver.findElements(By.xpath("//div[@class='_4ddWXP']"));
         if (items.size()==12){
             Assert.assertTrue(true);
@@ -22,6 +25,7 @@ public class _008_NoOfProductOnScreen extends _00_BaseClass {
             Assert.fail();
             Log.error("12 Items are not Present on Screen");
         }
+        Log.info("---------------------------------------------------------");
     }
     public void CheckTitleInSearchField(){
         Log.info("Checking the Title in Search Field");
@@ -34,6 +38,7 @@ public class _008_NoOfProductOnScreen extends _00_BaseClass {
             Assert.fail();
             Log.error("The Search field Text is NOT proper");
         }
+        Log.info("---------------------------------------------------------");
     }
     public void CheckForWidthAndHeight(){
         Log.info("Checking for Height of Search field");
@@ -46,6 +51,7 @@ public class _008_NoOfProductOnScreen extends _00_BaseClass {
             Assert.fail();
             Log.error("The Height is not Correct");
         }
+        Log.info("---------------------------------------------------------");
     }
     public void CheckIcon(){
         Log.info("Checking for Search icon is present or not");
@@ -57,6 +63,7 @@ public class _008_NoOfProductOnScreen extends _00_BaseClass {
             Assert.fail();
             Log.error("The Search Icon is not Present");
         }
+        Log.info("---------------------------------------------------------");
 
     }
 }

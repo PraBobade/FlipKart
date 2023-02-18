@@ -6,6 +6,7 @@ import org.junit.Assert;
 public class _001_HomePageValidation extends _00_BaseClass {
 
     public void ValidateURL(){
+        Log.info("validating URl of new TAB");
         String URL = "https://www.flipkart.com/";
 
         String url = driver.getCurrentUrl();
@@ -18,8 +19,10 @@ public class _001_HomePageValidation extends _00_BaseClass {
             Log.error("The URL is Incorrect");
             Assert.fail();
         }
+        Log.info("---------------------------------------------------------");
     }
     public void ValidateTitle(){
+        Log.info("Validating Title of Tabs");
         String title = driver.getTitle();
         System.out.println(title);
         if (title.equals("Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!")){
@@ -30,5 +33,6 @@ public class _001_HomePageValidation extends _00_BaseClass {
             Log.error("The Title is incorrect");
             Assert.fail();
         }
+        Log.info("---------------------------------------------------------");
     }
 }

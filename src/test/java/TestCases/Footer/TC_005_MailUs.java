@@ -6,13 +6,11 @@ import PageObject.LogIn.Home;
 import TestCases._00_BaseClass;
 import org.testng.annotations.Test;
 
-public class TC_005_MailUs extends _00_BaseClass {
+public class TC_005_MailUs extends _005_MailUs {
 
     @Test
     public void About(){
-        Home Home = new Home();
-        _005_MailUs HP = new _005_MailUs();
-        Home.HomePage();
-        HP.ValidateMailUs();
+        HomePage();
+        ValidateMailUs();
     }
 }

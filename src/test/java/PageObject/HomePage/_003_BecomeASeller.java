@@ -25,6 +25,6 @@ public class _003_BecomeASeller extends _00_BaseClass {
             Log.error("The option is not working Properly");
             Assert.fail();
         }
-      ;
+        Log.info("---------------------------------------------------------");
     }
 }

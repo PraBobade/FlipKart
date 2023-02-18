@@ -9,9 +9,7 @@ public class TC_006_ExplorePlus extends _006_ExplorePlus {
 
     @Test
     public void ExplorePlus(){
-        Home home = new Home();
-        home.HomePage();
-        _006_ExplorePlus HP = new _006_ExplorePlus();
-        HP.ExplorePlus();
+        HomePage();
+        ValidateExplorePlusOption();
     }
 }

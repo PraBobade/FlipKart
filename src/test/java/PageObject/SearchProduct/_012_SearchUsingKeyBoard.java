@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 public class _012_SearchUsingKeyBoard extends _00_BaseClass {
 
 
-    public void SearchProductUsingKeyBoard(){
+    public void SearchingProductUsingKeyBoard(){
 
         Log.info("Searching Product only Using KeyBoard only");
         act.sendKeys(Keys.TAB).build().perform();
@@ -22,6 +22,6 @@ public class _012_SearchUsingKeyBoard extends _00_BaseClass {
         Log.info("Pressing the Enter Key");
         act.sendKeys(Keys.ENTER).build().perform();
 
-
+        Log.info("---------------------------------------------------------");
     }
 }

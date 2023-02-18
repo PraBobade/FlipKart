@@ -11,8 +11,10 @@ public class _005_MessageDisplay extends _00_BaseClass {
         Log.info("Search for Non-Existing Product");
         driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("eieijfie");
         driver.findElement(By.xpath("//button[@class='L0Z3Pu']")).click();
+        Log.info("---------------------------------------------------------");
     }
     public void ValidateTextPresentProperlyOrNot(){
+        Log.info("Validating Text is Properly or not");
         String text = driver.findElement(By.xpath("//div[@class='_3uTeW4']")).getText();
         String text2 = driver.findElement(By.xpath("//div[@class='CqJpD_']")).getText();
         if (text.equalsIgnoreCase("Sorry, no results found!") && text2.equalsIgnoreCase("Please check the spelling or try searching for something else") ){
@@ -23,7 +25,7 @@ public class _005_MessageDisplay extends _00_BaseClass {
             Assert.fail();
             Log.error("the Text present on Screen is incorrect");
         }
-
+        Log.info("---------------------------------------------------------");
 
     }
 }

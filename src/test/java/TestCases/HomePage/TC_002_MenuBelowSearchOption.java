@@ -5,12 +5,10 @@ import PageObject.LogIn.Home;
 import TestCases._00_BaseClass;
 import org.testng.annotations.Test;
 
-public class TC_002_MenuBelowSearchOption extends _00_BaseClass {
+public class TC_002_MenuBelowSearchOption extends _002_MenuBelowSearchOption {
     @Test
-    public void ValidateMenu(){
-        Home Home = new Home();
-        Home.HomePage();
-        _002_MenuBelowSearchOption HP = new _002_MenuBelowSearchOption();
-        HP.ValidateMenu();
+    public void Menu(){
+        HomePage();
+        ValidateMenu();
     }
 }

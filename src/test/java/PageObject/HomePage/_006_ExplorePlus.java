@@ -9,13 +9,13 @@ import java.util.ArrayList;
 
 public class _006_ExplorePlus extends _00_BaseClass {
 
-    public void ExplorePlus(){
+    public void ValidateExplorePlusOption(){
         WebElement EP = driver.findElement(By.cssSelector("._21ljIi"));
         act.moveToElement(EP).keyDown(Keys.CONTROL).click().build().perform();
 
         ArrayList<String> Tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(Tabs.get(1));
         String Title  = driver.getTitle();
-        System.out.println(Title);
+        System.out.println(Title);Log.info("---------------------------------------------------------");
     }
 }

@@ -11,6 +11,7 @@ import java.util.List;
 public class _002_MenuBelowSearchOption extends _00_BaseClass {
 
     public void ValidateMenu(){
+        Log.info("validating Main Menu of the FlipKart");
         List<WebElement> MenuList = driver.findElements(By.xpath("//div[@class='eFQ30H']"));
         for (WebElement e: MenuList) {
             act.moveToElement(e).keyDown(Keys.CONTROL).click().build().perform();
@@ -21,5 +22,6 @@ public class _002_MenuBelowSearchOption extends _00_BaseClass {
             System.out.println(driver.getTitle());
         }
         driver.switchTo().window(Tabs.get(0));
+        Log.info("---------------------------------------------------------");
     }
 }

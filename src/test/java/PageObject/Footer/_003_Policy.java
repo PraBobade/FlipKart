@@ -19,8 +19,7 @@ public class _003_Policy extends _00_BaseClass {
             act.moveToElement(e).keyDown(Keys.CONTROL).click().build().perform();
         }
     }
-//Online Shopping India | Buy Mobiles, Electronics, Appliances, Clothing and More Online at Flipkart.com
-//Online Shopping India | Buy Mobiles, Electronics, Appliances, Clothing and More Online at Flipkart.com
+
     public void ValidateTitleOfLinks() throws InterruptedException {
         Log.info("Validating Title of Links");
         String Text1 = "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!";
@@ -39,7 +38,6 @@ public class _003_Policy extends _00_BaseClass {
 
 
         for (int j=0;j<tabs.size();j++){
-            System.out.println(j);
             driver.switchTo().window(tabs.get(j));
             String Title = driver.getTitle();
             for (int i=0;i<=tabs.size()-1;i++) {
@@ -53,6 +51,6 @@ public class _003_Policy extends _00_BaseClass {
             }
         }
         Assert.assertTrue(result);
-        Log.info("Validation of Links Text is completed");
+        Log.info("Validation of Links Text is completed");Log.info("---------------------------------------------------------");
     }
 }

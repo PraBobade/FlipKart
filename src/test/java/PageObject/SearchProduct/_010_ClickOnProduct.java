@@ -13,6 +13,7 @@ public class _010_ClickOnProduct extends _00_BaseClass {
         Log.info("Searching for Product");
         driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("iMac");
         driver.findElement(By.xpath("//button[@class='L0Z3Pu']")).click();
+        Log.info("---------------------------------------------------------");
     }
     public void ClickOnFirstItem(){
         Log.info("Click On First Item");
@@ -30,6 +31,6 @@ public class _010_ClickOnProduct extends _00_BaseClass {
             Log.error("There is no Tab Present after clicking on Product");
             Assert.fail();
         }
-
+        Log.info("---------------------------------------------------------");
     }
 }

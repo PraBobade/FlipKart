@@ -29,5 +29,6 @@ public class _005_MailUs extends _00_BaseClass {
         }
         Assert.assertTrue(result);
         Log.info("Validating Address in Mail Us Footer is completed");
+        Log.info("---------------------------------------------------------");
     }
 }

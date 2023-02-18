@@ -19,6 +19,6 @@ public class _005_Cart extends _00_BaseClass {
         else{
             Log.error("The Text is invalid");
             Assert.fail();
-        }
+        }Log.info("---------------------------------------------------------");
     }
 }

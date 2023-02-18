@@ -6,14 +6,12 @@ import PageObject.LogIn.Home;
 import TestCases._00_BaseClass;
 import org.testng.annotations.Test;
 
-public class TC_009_Home extends _00_BaseClass {
+public class TC_009_Home extends _009_Home {
 
     @Test
     public void HomeAppliances(){
-        Home home = new Home();
-        home.HomePage();
-        _009_Home HP = new _009_Home();
-        HP.HomeOptions();
-        HP.HomeFurnitureOptions();
+        HomePage();
+        HomeOptions();
+        HomeFurnitureOptions();
     }
 }

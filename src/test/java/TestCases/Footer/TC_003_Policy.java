@@ -6,14 +6,12 @@ import PageObject.LogIn.Home;
 import TestCases._00_BaseClass;
 import org.testng.annotations.Test;
 
-public class TC_003_Policy extends _00_BaseClass {
+public class TC_003_Policy extends _003_Policy {
 
     @Test
     public void Policy() throws InterruptedException {
-        Home Home = new Home();
-        _003_Policy HP = new _003_Policy();
-        Home.HomePage();
-        HP.PolicyLinks();
-        HP.ValidateTitleOfLinks();
+        HomePage();
+        PolicyLinks();
+        ValidateTitleOfLinks();
     }
 }

@@ -8,10 +8,16 @@ import java.util.List;
 
 public class _001_Travel extends _00_BaseClass {
 
-    public void Travel(){
+    public static void Travel(){
         List<WebElement> el = driver.findElements(By.xpath("//div[@class='xtXmba']"));
         for(WebElement e:el){
-            System.out.println(e.getText());
+            String Travel = e.getText();
+            if (Travel.equalsIgnoreCase("Travel")){
+                e.click();
+            }
         }
+
     }
+
+
 }

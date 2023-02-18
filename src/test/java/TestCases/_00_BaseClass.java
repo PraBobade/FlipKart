@@ -4,6 +4,7 @@ import Utilities.ReadConfig;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -61,8 +63,12 @@ public class _00_BaseClass {
         File sc = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(sc, new File(path));
     }
-    // @AfterClass
+   // @AfterClass
     public void CloseBrowser(){
         driver.quit();
+    }
+    public static void HomePage(){
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='_36HLxm col col-3-5']"))));
+        driver.findElement(By.xpath("//button[@class=\"_2KpZ6l _2doB4z\"]")).click();
     }
 }
