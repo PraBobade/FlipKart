@@ -9,7 +9,7 @@
             <class name="TestCases.LogIn.TC_001_LoginPage"/>
         </classes>
     </test>
-    <test verbose="2" name="Search Product">
+    <test  name="Search Product">
         <classes>
             <class name="TestCases.SearchProduct.TC_001_SearchForProduct"/>
             <class name="TestCases.SearchProduct.TC_002_SearchNonExistingProduct"/>
@@ -54,6 +54,14 @@
             <class name="TestCases.FlipKart_Travel.TC_001_Travel"/>
             <class name="TestCases.FlipKart_Travel.TC_002_ValidateBankOffersInTravel"/>
             <class name="TestCases.FlipKart_Travel.TC_003_ValidateBestOffersInTravel"/>
+            <class name="TestCases.FlipKart_Travel.TC_005_TravelApp"/>
+        </classes>
+    </test>
+    <test name="Compare Products"   >
+        <classes>
+            <class name="TestCases.Compare.TC_001_ValidateCompareOption"/>
+            <class name="TestCases.Compare.TC_002_CompareTwoProduct"/>
+            <class name="TestCases.Compare.TC_003_ValidateMaximumCompare"/>
         </classes>
     </test>
 
