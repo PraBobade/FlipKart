@@ -8,6 +8,6 @@ public class TC_003_BecomeASeller extends _003_BecomeASeller {
     @Test
     public void ValidateBecomeASellerOption(){
        HomePage();
-       ValidateBecomeASellerOption();
+       ValidatingBecomeASellerOption();
     }
 }

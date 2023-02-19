@@ -22,6 +22,6 @@ public class _002_MenuBelowSearchOption extends _00_BaseClass {
             System.out.println(driver.getTitle());
         }
         driver.switchTo().window(Tabs.get(0));
-        Log.info("---------------------------------------------------------");
+
     }
 }

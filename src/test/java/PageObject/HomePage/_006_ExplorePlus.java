@@ -16,6 +16,6 @@ public class _006_ExplorePlus extends _00_BaseClass {
         ArrayList<String> Tabs = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(Tabs.get(1));
         String Title  = driver.getTitle();
-        System.out.println(Title);Log.info("---------------------------------------------------------");
+        System.out.println(Title);
     }
 }

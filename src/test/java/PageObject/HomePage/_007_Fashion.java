@@ -11,15 +11,15 @@ public class _007_Fashion extends _00_BaseClass {
        act.moveToElement(driver.findElement(By.xpath("(//div[@class='eFQ30H'])[3]"))).build().perform();
        WebElement MensWears =  driver.findElement(By.xpath(" //a[@class ='_6WOcW9 _2-k99T']"));
        act.moveToElement(MensWears).keyDown(Keys.CONTROL).click().build().perform();
-        Log.info("---------------------------------------------------------");}
+        }
     public void MensBottomWear(){
         act.moveToElement(driver.findElement(By.xpath("(//div[@class='eFQ30H'])[3]"))).build().perform();
         WebElement MensWears =  driver.findElement(By.xpath(" //a[@class ='_6WOcW9']"));
         act.moveToElement(MensWears).keyDown(Keys.CONTROL).click().build().perform();
-        Log.info("---------------------------------------------------------");}
+        }
     public void MensEthnic(){
         act.moveToElement(driver.findElement(By.xpath("(//div[@class='eFQ30H'])[3]"))).build().perform();
         WebElement MensWears =  driver.findElement(By.xpath(" (//a[@class ='_6WOcW9'])[2]"));
         act.moveToElement(MensWears).keyDown(Keys.CONTROL).click().build().perform();
-        Log.info("---------------------------------------------------------");}
+        }
 }

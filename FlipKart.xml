@@ -87,6 +87,12 @@
             <class name="TestCases.HomePage.TC_008_Electronics"/>
             <class name="TestCases.HomePage.TC_009_Home"/>
             <class name="TestCases.HomePage.TC_010_BeautyToysMore"/>
+            <class name="TestCases.HomePage.TC_011_ValidateAdvertisement"/>
+            <class name="TestCases.HomePage.TC_012_TotalItemOnHomeScreen"/>
+            <class name="TestCases.HomePage.TC_013_ValidatingMoreOptionNotification"/>
+            <class name="TestCases.HomePage.TC_014_ValidatingMoreOptionAdvertise"/>
+            <class name="TestCases.HomePage.TC_015_ValidatingMoreOptionCustomerCare"/>
+            <class name="TestCases.HomePage.TC_016_ValidatingMoreOptionDownloadApp"/>
         </classes>
     </test>
 

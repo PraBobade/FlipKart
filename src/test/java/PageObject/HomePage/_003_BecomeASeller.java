@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class _003_BecomeASeller extends _00_BaseClass {
 
-    public void ValidateBecomeASellerOption(){
+    public void ValidatingBecomeASellerOption(){
         Log.info("Validating the Become a Seller Option near Login option");
         act.moveToElement(driver.findElement(By.cssSelector("._3-PJz-"))).keyDown(Keys.CONTROL).click().build().perform();
         ArrayList<String> Tabs = new ArrayList<>(driver.getWindowHandles());

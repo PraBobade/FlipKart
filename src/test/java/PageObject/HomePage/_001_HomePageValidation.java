@@ -19,7 +19,6 @@ public class _001_HomePageValidation extends _00_BaseClass {
             Log.error("The URL is Incorrect");
             Assert.fail();
         }
-        Log.info("---------------------------------------------------------");
     }
     public void ValidateTitle(){
         Log.info("Validating Title of Tabs");
@@ -33,6 +32,5 @@ public class _001_HomePageValidation extends _00_BaseClass {
             Log.error("The Title is incorrect");
             Assert.fail();
         }
-        Log.info("---------------------------------------------------------");
     }
 }

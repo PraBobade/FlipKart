@@ -1,9 +1,9 @@
 package TestCases.HomePage;
 
-import PageObject.HomePage._004_MoreOption;
+import PageObject.HomePage._013_16_MoreOption;
 import org.testng.annotations.Test;
 
-public class TC_004_ValidatingMoreOption extends _004_MoreOption {
+public class TC_004_ValidatingMoreOption extends _013_16_MoreOption {
 
     @Test
     public void ValidateMoreOption() throws InterruptedException {
