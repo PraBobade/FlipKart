@@ -1,8 +1,6 @@
 package TestCases.HomePage;
 
 import PageObject.HomePage._004_MoreOption;
-import PageObject.LogIn.Home;
-import TestCases._00_BaseClass;
 import org.testng.annotations.Test;
 
 public class TC_004_ValidatingMoreOption extends _004_MoreOption {

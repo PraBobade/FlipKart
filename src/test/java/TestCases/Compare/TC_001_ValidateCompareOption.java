@@ -1,7 +1,6 @@
 package TestCases.Compare;
 
 import PageObject.Compare._001_ValidateCompareOption;
-import PageObject.LogIn.Home;
 import org.testng.annotations.Test;
 
 public class TC_001_ValidateCompareOption extends _001_ValidateCompareOption {
