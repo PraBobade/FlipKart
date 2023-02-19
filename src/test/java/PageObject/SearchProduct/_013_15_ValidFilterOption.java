@@ -7,7 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class _013_ValidFilterOption extends _00_BaseClass {
+public class _013_15_ValidFilterOption extends _00_BaseClass {
     JavascriptExecutor js = (JavascriptExecutor)driver;
     public void SearchForProduct(){
         Log.info("Validating Filter Option");

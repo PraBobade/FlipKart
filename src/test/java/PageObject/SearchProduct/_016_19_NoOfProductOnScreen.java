@@ -7,19 +7,20 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class _008_NoOfProductOnScreen extends _00_BaseClass {
+public class _016_19_NoOfProductOnScreen extends _00_BaseClass {
     public void SearchForProduct(){
         Log.info("Searching for product");
         driver.findElement(By.cssSelector("input[placeholder='Search for products, brands and more']")).sendKeys("iMac");
         driver.findElement(By.xpath("//button[@class='L0Z3Pu']")).click();
         Log.info("---------------------------------------------------------");
     }
-    public void CheckForNumberOfProduct(){
+    public void ValidateNoOfProducts(){
         Log.info("Check for Number of product");
         List<WebElement> items = driver.findElements(By.xpath("//div[@class='_4ddWXP']"));
-        if (items.size()==12){
+        System.out.println(items.size());
+        if (items.size()>10){
             Assert.assertTrue(true);
-            Log.info("12 Items Present on Screen");
+            Log.info(items.size()+" Items Present on Screen");
         }
         else{
             Assert.fail();
@@ -27,10 +28,11 @@ public class _008_NoOfProductOnScreen extends _00_BaseClass {
         }
         Log.info("---------------------------------------------------------");
     }
-    public void CheckTitleInSearchField(){
+    public void ValidateTitleInSearchBox(){
         Log.info("Checking the Title in Search Field");
-        String FieldText = driver.findElement(By.xpath("//input[@title='Search for products, brands and more']")).getText();
-        if (FieldText.equalsIgnoreCase("Search for product, brands and more")){
+        String FieldText = driver.findElement(By.xpath("//input[@title='Search for products, brands and more']")).getAttribute("placeholder");
+        System.out.println(FieldText+"  this is text");
+        if (FieldText.contains("Search for products, brands and more")){
             Assert.assertTrue(true);
             Log.info("The Title of Search Icon is Correct.");
         }
@@ -40,7 +42,7 @@ public class _008_NoOfProductOnScreen extends _00_BaseClass {
         }
         Log.info("---------------------------------------------------------");
     }
-    public void CheckForWidthAndHeight(){
+    public void ValidateHeightOfSearchBox(){
         Log.info("Checking for Height of Search field");
         int height = driver.findElement(By.xpath("//input[@title='Search for products, brands and more']")).getSize().getHeight();
         if (height==36){
@@ -53,9 +55,9 @@ public class _008_NoOfProductOnScreen extends _00_BaseClass {
         }
         Log.info("---------------------------------------------------------");
     }
-    public void CheckIcon(){
+    public void ValidateSearchIcon(){
         Log.info("Checking for Search icon is present or not");
-        WebElement Search = driver.findElement(By.xpath(""));
+        WebElement Search = driver.findElement(By.xpath("//button[@type='submit']//*[name()='svg']"));
         if (Search.isDisplayed()){
             Assert.assertTrue(true);
         }

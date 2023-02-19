@@ -18,7 +18,7 @@
             <class name="TestCases.SearchProduct.TC_005_ValidMessageDisplay"/>
             <class name="TestCases.SearchProduct.TC_006_ValidBreadcrumbOption"/>
             <class name="TestCases.SearchProduct.TC_007_TotalNumberOfProductVisible"/>
-            <class name="TestCases.SearchProduct.TC_008_NoOfProductOnScreen" />
+            <class name="TestCases.SearchProduct.TC_008_ValidateSuggestedSearchOption" />
             <class name="TestCases.SearchProduct.TC_009_UIofSearch" />
             <class name="TestCases.SearchProduct.TC_010_ClickOnProduct" />
             <class name="TestCases.SearchProduct.TC_011_PageHeading" />
@@ -26,6 +26,10 @@
             <class name="TestCases.SearchProduct.TC_013_ValidFilterOptionForPrice" />
             <class name="TestCases.SearchProduct.TC_014_ValidFilterOptionForOffer" />
             <class name="TestCases.SearchProduct.TC_015_ValidFilterOptionForCustomersRating" />
+            <class name="TestCases.SearchProduct.TC_016_ValidateTitleInSearchBox"/>
+            <class name="TestCases.SearchProduct.TC_017_ValidateHeightOfSearchBox"/>
+            <class name="TestCases.SearchProduct.TC_018_ValidateNoOfProductAfterSearchingProduct" />
+            <class name="TestCases.SearchProduct.TC_019_ValidateSearchIconIsPresentOrNot" />
 
         </classes>
     </test>
