@@ -1,9 +1,8 @@
-package PageObject.BeforeLogIn;
+package PageObject.HomePage;
 
 import TestCases._00_BaseClass;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-
 
 
 public class _004_ViewAllOption extends _00_BaseClass {
