@@ -41,4 +41,8 @@ public class ReadConfig {
         String browser = pro.getProperty("BrowserName");
         return browser;
     }
+    public String Mail(){
+        String Mail = pro.getProperty("mail");
+        return Mail;
+    }
 }

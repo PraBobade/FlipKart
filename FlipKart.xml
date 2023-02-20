@@ -21,6 +21,7 @@
             <class name="TestCases.BeforeLogIn.TC_013_LogInPlaceHolder"/>
             <class name="TestCases.BeforeLogIn.TC_014_ValidateTermOfUse"/>
             <class name="TestCases.BeforeLogIn.TC_015_ValidatePrivacyPolicy"/>
+            <class name="TestCases.BeforeLogIn.TC_016_LoginWithNotRegisteredMail"/>
         </classes>
     </test>
     <test name="Compare Products"   >

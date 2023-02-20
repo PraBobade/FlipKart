@@ -24,7 +24,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class _00_BaseClass {
-    ReadConfig read = new ReadConfig();
+    public static ReadConfig read = new ReadConfig();
 
     public static WebDriver driver;
     public static Logger Log;
@@ -41,7 +41,7 @@ public class _00_BaseClass {
             System.setProperty("webdriver.chrome.driver", read.getChromeDriverPath());
             driver = new ChromeDriver();
         }
-        if (read.GetBrowser().contains("nternetExplorer")){
+        if (read.GetBrowser().contains("nternet")){
             System.setProperty("webdriver.ie.driver", read.getIEDriverPath());
             driver = new InternetExplorerDriver();
         }
