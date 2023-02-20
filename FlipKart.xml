@@ -4,31 +4,32 @@
     <listeners>
         <listener class-name="Utilities.Listener"/>
     </listeners>
-    <test name="Before Login"   >
+    <test name="Login"   >
         <classes>
-            <class name="TestCases.BeforeLogIn.TC_001_LoginPage"/>
-            <class name="TestCases.BeforeLogIn.TC_002_ValidateSignUpButton"/>
-            <class name="TestCases.BeforeLogIn.TC_003_MyProfile"/>
-            <class name="TestCases.BeforeLogIn.TC_004_FlipKartPlusZone"/>
-            <class name="TestCases.BeforeLogIn.TC_005_Orders"/>
-            <class name="TestCases.BeforeLogIn.TC_006_WishList"/>
-            <class name="TestCases.BeforeLogIn.TC_007_Rewards"/>
-            <class name="TestCases.BeforeLogIn.TC_008_GiftCard"/>
-            <class name="TestCases.BeforeLogIn.TC_009_LoginWithInvalidNumber"/>
-            <class name="TestCases.BeforeLogIn.TC_010_LoginWithInvalidEmail"/>
-            <class name="TestCases.BeforeLogIn.TC_011_CreateAccountOption"/>
-            <class name="TestCases.BeforeLogIn.TC_012_CreateAccountOption"/>
-            <class name="TestCases.BeforeLogIn.TC_013_LogInPlaceHolder"/>
-            <class name="TestCases.BeforeLogIn.TC_014_ValidateTermOfUse"/>
-            <class name="TestCases.BeforeLogIn.TC_015_ValidatePrivacyPolicy"/>
-            <class name="TestCases.BeforeLogIn.TC_016_LoginWithNotRegisteredMail"/>
+            <class name="TestCases.Login.TC_001_LoginPage"/>
+            <class name="TestCases.Login.TC_002_ValidateSignUpButton"/>
+            <class name="TestCases.Login.TC_003_MyProfile"/>
+            <class name="TestCases.Login.TC_004_FlipKartPlusZone"/>
+            <class name="TestCases.Login.TC_005_Orders"/>
+            <class name="TestCases.Login.TC_006_WishList"/>
+            <class name="TestCases.Login.TC_007_Rewards"/>
+            <class name="TestCases.Login.TC_008_GiftCard"/>
+            <class name="TestCases.Login.TC_009_LoginWithInvalidNumber"/>
+            <class name="TestCases.Login.TC_010_LoginWithInvalidEmail"/>
+            <class name="TestCases.Login.TC_011_CreateAccountOption"/>
+            <class name="TestCases.Login.TC_012_CreateAccountOption"/>
+            <class name="TestCases.Login.TC_013_LogInPlaceHolder"/>
+            <class name="TestCases.Login.TC_014_ValidateTermOfUse"/>
+            <class name="TestCases.Login.TC_015_ValidatePrivacyPolicy"/>
+            <class name="TestCases.Login.TC_016_LoginWithNotRegisteredMail"/>
+            <class name="TestCases.Login.TC_017_registerWithValidMobileNumber"/>
         </classes>
     </test>
     <test name="Compare Products"   >
         <classes>
             <class name="TestCases.Compare.TC_001_ValidateCompareOption"/>
             <class name="TestCases.Compare.TC_002_CompareTwoProduct"/>
-            <class name="TestCases.Compare.TC_003_ValidateMaximumCompare"/>
+            <class name="TestCases.Compare.TC_003_MaximumCompare"/>
             <class name="TestCases.Compare.TC_004_ViewCompareProducts"/>
             <class name="TestCases.Compare.TC_005_ShowDifferenceOnly"/>
             <class name="TestCases.Compare.TC_006_RemoveItemFromCompare"/>

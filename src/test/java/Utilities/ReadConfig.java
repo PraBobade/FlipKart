@@ -45,4 +45,8 @@ public class ReadConfig {
         String Mail = pro.getProperty("mail");
         return Mail;
     }
+    public String phone(){
+        String Mail = pro.getProperty("mobile");
+        return Mail;
+    }
 }

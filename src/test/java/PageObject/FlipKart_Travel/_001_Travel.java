@@ -9,6 +9,7 @@ import java.util.List;
 public class _001_Travel extends _00_BaseClass {
 
     public static void Travel(){
+        Log.info("Validating the Travel page working Properly or not");
         List<WebElement> el = driver.findElements(By.xpath("//div[@class='xtXmba']"));
         for(WebElement e:el){
             String Travel = e.getText();
